@@ -128,12 +128,12 @@
   #navigation {
     max-height: none; /* Remove max-height limit */
     display: block;
-    text-align: left; /* Aligns menu to the left */
+    text-align: right; /* Aligns menu to the right */
   }
   
   #navigation ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* Right align menu items */
   }
   
   #navigation li {
