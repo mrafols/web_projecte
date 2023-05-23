@@ -1,227 +1,142 @@
-/* CSS for the menu */
+/* styles.css */
 
-/* Default styles for all resolutions */
-html, body {
-    margin: 0;
-    height: 100%;
-  }
-  
-  * {
-    font-family: "Lato", sans-serif;
-    box-sizing: border-box;
-  }
-  
-  h2 {
-    vertical-align: center;
-    text-align: center;
-  }
-  .logo {
-    height: 70px; /* Adjusts the logo's height */
-    width: auto; /* Adjusts width based on height keeping aspect ratio */
-    margin-right: 1em;
-}
+/* Header */
 .top-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background: #F1DBBF;
-    color: black;
-    height: 80px;
-    padding: 1em;
-    position: relative; /* Add relative positioning */
+  background-color: #F1DBBF;
+  padding: 10px;
+}
+
+.logo {
+  max-width: 50%;
+  height: auto;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-button-container {
+  cursor: pointer;
+  display: none;
+}
+
+.menu-button-container .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  width: 30px;
+  height: 30px;
+}
+
+#navigation {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+#navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation li {
+  margin-bottom: 10px;
+}
+
+#navigation a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#menu-toggle:checked ~ #navigation {
+  max-height: 500px;
+}
+
+/* Content */
+.content {
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: #F1DBBF;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.footer-logo {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-menu a {
+  color: #333;
+  text-decoration: none;
+}
+
+.social-networks {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-networks li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-networks img {
+  width: 30px;
+  height: 30px; 
+}
+
+.social-networks a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 991.98px) {
+  .menu-button-container {
+    display: block;
   }
-  
-  
-  .menu {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+
+  #navigation {
+    text-align: right; /* Aligns menu to the right */
   }
-  
-  .menu > li {
-    margin: 0 1rem;
-    overflow: hidden;
-  }
-  
-  .menu > li > a {
-    text-decoration: none;
-    color: black; 
-  }
-  
+}
+
+/* Desktop */
+@media (min-width: 992px) {
   .menu-button-container {
     display: none;
-    height: 100%;
-    width: 30px;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 10px; /* Add margin */
-    margin-right: 10px; /* Add margin */
-  }
-  
-  
-  
-  #menu-toggle {
-    display: none;
-  }
-  .menu > li > a {
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.3s ease-in-out; 
   }
 
-  .menu > li > a:hover {
-    transform: scale(1.1); /* Scale the element up to 110% */
-    color: #b99b6b; /* Change the color on hover */
-  }
-  .menu-button,
-  .menu-button::before,
-  .menu-button::after {
+  #navigation {
+    max-height: none; /* Remove max-height limit */
     display: block;
-    background-color: #fff;
-    position: absolute;
-    height: 4px;
-    width: 30px;
-    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    border-radius: 2px;
+    text-align: left; /* Aligns menu to the left */
   }
   
-  .menu-button::before {
-    content: "";
-    margin-top: -8px;
-  }
-  
-  .menu-button::after {
-    content: "";
-    margin-top: 8px;
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button::before {
-    margin-top: 0px;
-    transform: rotate(405deg);
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button {
-    background: rgba(255, 255, 255, 0);
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button::after {
-    margin-top: 0px;
-    transform: rotate(-405deg);
-  }
-/* Footer Styles */
-.footer {
-    background-color: #f1dbbf;
-    padding: 20px;
+  #navigation ul {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
   
-  .footer-left {
-    margin-right: 20px;
+  #navigation li {
+    margin-bottom: 0;
   }
-  
-  .footer-logo {
-    height: 50px;
-    width: auto;
-  }
-  
-  .footer-center .footer-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .footer-center .footer-menu li {
-    margin-right: 15px;
-  }
-  
-  .footer-center .footer-menu li:last-child {
-    margin-right: 0;
-  }
-  
-  .footer-center .footer-menu a {
-    text-decoration: none;
-    color: #555;
-    font-weight: bold;
-  }
-  
-  .footer-right .social-networks {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .footer-right .social-networks li {
-    margin-right: 10px;
-  }
-  
-  .footer-right .social-networks li:last-child {
-    margin-right: 0;
-  }
-  
-  .footer-right .social-networks a {
-    text-decoration: none;
-    color: #555;
-  }
-  
-  .footer-right .social-networks img {
-    height: 20px;
-    width: auto;
-  }
-  
-  @media (max-width: 700px) {
-    .menu-button-container {
-      display: flex;
-    }
-  
-    .menu {
-      position: absolute;
-      top: 100%;
-      margin-top: 0em;
-      left: 0;
-      flex-direction: column;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-    }
-    #menu-toggle ~ .menu li {
-      height: 0;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-  
-    #menu-toggle:checked ~ .menu li {
-      border: 1px solid #333;
-      height: 2.5em;
-      padding: 0.5em;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-  
-    .menu > li {
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0.5em 0;
-      width: 100%;
-      color: white;
-      background-color: #222;
-    }
-  
-    .menu > li:not(:last-child) {
-      border-bottom: 1px solid #444;
-    }
-  }
-  
+}
