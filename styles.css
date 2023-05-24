@@ -1,5 +1,8 @@
 /* styles.css */
 
+/* Font Families */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Lato&display=swap');
+
 /* Header */
 .top-nav {
   background-color: #F1DBBF;
@@ -46,6 +49,7 @@
   color: #333;
   text-decoration: none;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #menu-toggle:checked ~ #navigation {
@@ -55,6 +59,7 @@
 /* Content */
 .content {
   padding: 20px;
+  font-family: 'Lato', sans-serif;
 }
 
 /* Footer */
@@ -139,4 +144,50 @@
   #navigation li {
     margin-bottom: 0;
   }
+}
+/* Fullscreen Background */
+.fullscreen-bg {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.fullscreen-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(images/landscape.jpg) center center/cover no-repeat;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column; /* Add this line to make title and subtitle appear on separate lines */
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
