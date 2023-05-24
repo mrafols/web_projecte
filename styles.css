@@ -64,7 +64,26 @@
   padding: 20px;
   font-family: 'Lato', sans-serif;
 }
-
+.news-item {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.news-item .news-image {
+  margin-bottom: 30px; 
+}
+.news-item p {
+  margin-top: 30px;
+}
+.news-item h2 {
+  text-align: center;
+  font-weight: bold;
+}
+.news-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
 /* Footer */
 .footer {
   background-color: #B99B6B;
