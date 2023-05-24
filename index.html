@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
   <title>CoperApp</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,8 @@
         <div class="col-6 col-md-9 text-right">
           <input type="checkbox" id="menu-toggle" class="menu-toggle">
           <label for="menu-toggle" class="menu-button-container">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            <span class="sr-only">Toggle Navigation</span>
           </label>
           <nav id="navigation" class="nav">
             <ul class="justify-content-center">
@@ -25,7 +26,7 @@
               <li class="nav-item"><a class="nav-link" href="#qui-som">Qui som</a></li>
               <li class="nav-item"><a class="nav-link" href="#productes">Productes</a></li>
               <li class="nav-item"><a class="nav-link" href="#com-funcionem">Com funcionem</a></li>
-              <li class="nav-item"><a class="nav-link" href="#compra-en-linea">Compra en línea</a></li>
+              <li class="nav-item"><a class="nav-link" href="#compra-en-linea">Compra en línia</a></li>
             </ul>
           </nav>
         </div>
@@ -48,44 +49,24 @@
       <div class="row">
         <div class="col-12 col-md-4 news-item">
           <div class="news-image">
-            <img src="images/chicken.jpg" alt="News Image">
+            <img src="images/chicken.jpg" alt="Imatge de notícia">
           </div>
-          <h2>"Una revolució sostenible en la indústria avícola: el ressorgiment de les gallines en petits granges"</h2>
-          <p>En els últims anys, la conscienciació mediambiental i el compromís amb la sostenibilitat han guiat un canvi significatiu en el sector agrícola. Un exemple d'aquesta transformació és el ressorgiment de les gallines en petits granges locals.</p>
+          <h2>"Una revolució sostenible en la indústria avícola: el ressorgiment de les gallines en petites granges"</h2>
+          <p>En els últims anys, la conscienciació mediambiental i el compromís amb la sostenibilitat han guiat un canvi significatiu en el sector agrícola. Un exemple d'aquesta transformació és el ressorgiment de les gallines en petites granges locals.</p>
         </div>
         <div class="col-12 col-md-4 news-item">
           <div class="news-image">
-            <img src="images/cow.jpg" alt="News Image">
+            <img src="images/cow.jpg" alt="Imatge de notícia">
           </div>
-          <h2>"Les vaques tornen a pasturar:
-            la revalorització dels camps i la
-            importància de la ramaderia
-            sostenible"</h2>
-          <p>Amb la creixent preocupació per la sostenibilitat i la
-            conservació dels recursos naturals, l'agricultura i la
-            ramaderia estan experimentant una transformació cap a
-            pràctiques més respectuoses amb el medi ambient. Un
-            exemple rellevant és el retorn a l'ús de camps per a la
-            cria de vaques, apostant per una gestió més tradicional i
-            sostenible de la ramaderia. Aquesta notícia analitza com
-            la reintroducció de les vaques en els camps està
-            impactant positivament en la salut dels animals.</p>
+          <h2>"Les vaques tornen a pasturar: la revalorització dels camps i la importància de la ramaderia sostenible"</h2>
+          <p>Amb la creixent preocupació per la sostenibilitat i la conservació dels recursos naturals, l'agricultura i la ramaderia estan experimentant una transformació cap a pràctiques més respectuoses amb el medi ambient. Un exemple rellevant és el retorn a l'ús de camps per a la cria de vaques, apostant per una gestió més tradicional i sostenible de la ramaderia. Aquesta notícia analitza com la reintroducció de les vaques en els camps està impactant positivament en la salut dels animals.</p>
         </div>
         <div class="col-12 col-md-4 news-item">
           <div class="news-image">
-            <img src="images/silo.jpg" alt="News Image">
+            <img src="images/silo.jpg" alt="Imatge de notícia">
           </div>
-          <h2>"La preservació de la tradició
-            agrícola: els sils i la recolecció,
-            clau per a una agricultura
-            sostenible i eficient"</h2>
-          <p>En l'era de la tecnologia i la industrialització, la
-            importància de mantenir i preservar les pràctiques
-            agrícoles tradicionals, com els sils i la recolecció, no pot
-            ser subestimada. Aquests mètodes ancestrals permeten
-            una gestió eficient dels recursos i la conservació de
-            l'entorn natural, alhora que promouen la biodiversitat i la
-            salut del sòl.</p>
+          <h2>"La preservació de la tradició agrícola: els silos i la recolecció, clau per a una agricultura sostenible i eficient"</h2>
+          <p>En l'era de la tecnologia i la industrialització, la importància de mantenir i preservar les pràctiques agrícoles tradicionals, com els silos i la recolecció, no pot ser subestimada. Aquests mètodes ancestrals permeten una gestió eficient dels recursos i la conservació de l'entorn natural, alhora que promouen la biodiversitat i la salut del sòl.</p>
         </div>
       </div>
     </div>
@@ -94,26 +75,45 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <hr class="separator"> <!-- Line separator -->
+          <hr class="separator" role="separator"> <!-- Separador de línia -->
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 col-md-8">
-          <a href="images/cow-full.jpg" data-lightbox="gallery" data-title="Big Image">
-            <img src="images/cow.jpg" alt="Big Image" class="img-fluid big-image">
-          </a>
-        </div>
-        <div class="col-12 col-md-4">
+      <!-- Secció del Carrusel d'Imatges -->
+      <div class="carousel-section">
+        <div class="container">
           <div class="row">
-            <div class="col-6">
-              <a href="images/silo-full.jpg" data-lightbox="gallery" data-title="Small Image 1">
-                <img src="images/silo.jpg" alt="Small Image 1" class="img-fluid small-image">
-              </a>
-            </div>
-            <div class="col-6">
-              <a href="images/chicken-full.jpg" data-lightbox="gallery" data-title="Small Image 2">
-                <img src="images/chicken.jpg" alt="Small Image 2" class="img-fluid small-image">
-              </a>
+            <div class="col-12 col-md-8 offset-md-2">
+              <div id="image-carousel" class="carousel slide" data-ride="carousel" aria-label="Carrusel d'imatges">
+                <!-- Indicadors del Carrusel -->
+                <ol class="carousel-indicators">
+                  <li data-target="#image-carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#image-carousel" data-slide-to="1"></li>
+                  <li data-target="#image-carousel" data-slide-to="2"></li>
+                </ol>
+          
+                <!-- Items del Carrusel -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <img src="images/cow.jpg" alt="Imatge gran">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/chicken.jpg" alt="Imatge petita 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/silo.jpg" alt="Imatge petita 2">
+                  </div>
+                </div>
+          
+                <!-- Controls del Carrusel -->
+                <a class="carousel-control-prev" href="#image-carousel" role="button" data-slide="prev" aria-label="Anterior">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#image-carousel" role="button" data-slide="next" aria-label="Següent">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Següent</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -124,7 +124,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-6 col-md-3">
-          <img class="footer-logo" src="Logo.svg" alt="Footer Logo">
+          <img class="footer-logo" src="Logo.svg" alt="Logo del peu de pàgina">
         </div>
         <div class="col-6 col-md-6 text-center">
           <ul class="footer-menu">
@@ -132,7 +132,7 @@
             <li class="nav-item"><a class="nav-link" href="#productes">Productes</a></li>
             <li class="nav-item"><a class="nav-link" href="#com-funcionem">Com funcionem</a></li>
             <li class="nav-item"><a class="nav-link" href="#contacte">Contacte</a></li>
-            <li class="nav-item"><a class="nav-link" href="#compra-en-linea">Compra en línea</a></li>
+            <li class="nav-item"><a class="nav-link" href="#compra-en-linea">Compra en línia</a></li>
           </ul>
         </div>
         <div class="col-md-3 text-right">
@@ -148,7 +148,8 @@
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootsrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
 </body>
 </html>
