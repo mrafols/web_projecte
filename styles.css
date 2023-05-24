@@ -5,14 +5,17 @@
 
 /* Header */
 .top-nav {
-  background-color: #F1DBBF;
+  background-color: #698269;
   padding: 10px;
 }
 
 .logo {
   max-width: 50%;
   height: auto;
+  border-radius: 50%;
+  background-color: #FFF;
 }
+
 
 .menu-toggle {
   display: none;
@@ -32,7 +35,7 @@
 #navigation {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 1, 1);
 }
 
 #navigation ul {
@@ -46,9 +49,9 @@
 }
 
 #navigation a {
-  color: #333;
+  color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: regular;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -64,7 +67,7 @@
 
 /* Footer */
 .footer {
-  background-color: #F1DBBF;
+  background-color: #B99B6B;
   padding: 20px;
   margin-top: 20px;
 }
@@ -72,7 +75,8 @@
 .footer-logo {
   max-width: 50%;
   height: auto;
-  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: #FFF;  
 }
 
 .footer-menu {
