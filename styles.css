@@ -61,7 +61,6 @@
 /* Content */
 html, body {
   height: 100%;
-  display: flex;
   flex-direction: column;
 }
 
@@ -120,12 +119,6 @@ html, body {
   font-weight: bold;
   font-size: 16px;
   text-decoration: none;
-}
-
-@media (max-width: 767.98px) {
-  .carousel-inner {
-    height: 30vh;
-  }
 }
 
 /* Footer */
