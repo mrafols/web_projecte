@@ -100,13 +100,15 @@ html, body {
   padding: 20px;
 }
 
-.carousel-inner {
-  height: 50vh; 
-}
-
 .carousel-item img {
   width: 100%;
   height: auto;
+}
+.carousel-description{
+  font-size: 16px;
+  color: #698269;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .btn {
@@ -240,17 +242,17 @@ html, body {
   justify-content: center;
 }
 
-.title {
+.title{
   color: #fff;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px;}
 
 .subtitle {
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
 }
