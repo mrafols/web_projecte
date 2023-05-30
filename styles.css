@@ -65,12 +65,14 @@ height: 100%;
 display: flex;
 flex-direction: column;
 }
-
 img {
   max-width: 100%;
   height: auto;
 }
-
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
 .content {
 flex: 1 0 auto;
 padding: 20px;
@@ -133,7 +135,6 @@ object-fit: cover;
 object-position: center;
 }
 
-
 .product h3 {
 font-size: 18px;
 margin-top: 10px;
@@ -169,6 +170,7 @@ flex-shrink: 0;
 background-color: #B99B6B;
 padding: 20px;
 margin-top: 20px;
+font-family: 'Montserrat', sans-serif;
 }
 
 .footer-logo {
