@@ -1,32 +1,28 @@
-
-/* styles.css */
-
-/* Fonts */
+/* Importem les Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Lato&display=swap');
 
-/* Header */
+/* Aquí modifiquem tota la secció del Header */
 .top-nav {
 background-color: #698269;
 padding: 10px;
 }
-
+/* Logo */
 .logo {
 max-width: 50%;
 height: auto;
 border-radius: 50%;
 background-color: #FFF;
 }
-
+/* Menú */
 .menu-toggle {
 display: none;
 }
-
+/* Menú desplegable */
 .menu-button-container {
 cursor: pointer;
 display: none;
 }
-
 .menu-button-container .navbar-toggler-icon {
 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 width: 30px;
@@ -60,51 +56,52 @@ font-family: 'Montserrat', sans-serif;
 max-height: 500px;
 }
 
-/* Content */
+/* Totes les modificacions del contingut */
 html, body {
 height: 100%;
 display: flex;
 flex-direction: column;
 }
 img {
-  max-width: 100%;
-  height: auto;
+max-width: 100%;
+height: auto;
 }
 h3, h4, h5, h6 {
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
 }
+/* Contingut principal */
 .content {
 flex: 1 0 auto;
 padding: 20px;
 font-family: 'Lato', sans-serif;
 }
-
+/* Item de notícia */
 .news-item {
 text-align: left;
 margin-bottom: 20px;
 }
-
+/* Imatge dins de l'item de notícia */
 .news-item .news-image {
 margin-bottom: 30px;
 }
-
+/* Paràgraf dins de l'item de notícia */
 .news-item p {
 margin-top: 30px;
 }
-
+/* Títol dins de l'item de notícia */
 .news-item h2 {
 text-align: center;
 font-weight: bold;
 }
-
+/* Imatge de l'item de notícia */
 .news-image img {
 max-width: 100%;
 height: auto;
 border-radius: 5px;
 margin-bottom: 10px;
 }
-
+/* Secció del carrusel */
 .carousel-section {
 padding: 20px;
 }
@@ -113,14 +110,14 @@ padding: 20px;
 width: 100%;
 height: auto;
 }
-
+/* Descripció del carrusel */
 .carousel-description{
 font-size: 16px;
 color: #698269;
 margin-top: 10px;
 margin-bottom: 10px;
 }
-
+/* Producte */
 .product {
 background-color: #F2F2F2;
 padding: 20px;
@@ -128,32 +125,32 @@ border-radius: 5px;
 text-align: center;
 margin-bottom: 20px;
 }
-
+/* Imatge del producte */
 .product img {
 width: 100%;
 height: 200px;
 object-fit: cover;
 object-position: center;
 }
-
+/* Títol del producte */
 .product h3 {
 font-size: 18px;
 margin-top: 10px;
 margin-bottom: 20px; 
 }
-
+/* Descripció del producte */
 .product p {
 font-size: 16px;
 color: #333;
 margin-bottom: 10px;
 }
-
+/* Preu del producte */
 .product .price {
 font-size: 16px;
 color: #698269;
 margin-bottom: 10px;
 }
-
+/* Botó 'Afegir al carret' */
 .product .add-to-cart {
 background-color: #698269;
 color: white;
@@ -165,7 +162,7 @@ font-size: 16px;
 text-decoration: none;
 }
 
-/* Footer */
+/* Contingut del Footer */
 .footer {
 flex-shrink: 0;
 background-color: #B99B6B;
@@ -173,31 +170,31 @@ padding: 20px;
 margin-top: 20px;
 font-family: 'Montserrat', sans-serif;
 }
-
+/* Logo del Footer */
 .footer-logo {
 max-width: 50%;
 height: auto;
 border-radius: 50%;
 background-color: #FFF;
 }
-
+/* Menú del Footer */
 .footer-menu {
 list-style-type: none;
 margin: 0;
 padding: 0;
 text-align: center;
 }
-
+/* Item del menú del Footer */
 .footer-menu li {
 display: inline-block;
 margin-right: 10px;
 }
-
+/* Enllaços del Footer */
 .footer-menu a {
 color: #333;
 text-decoration: none;
 }
-
+/* Icones de les xarxes socials */
 .social-networks {
 list-style-type: none;
 margin: 0;
@@ -220,7 +217,7 @@ text-decoration: none;
 }
 
 
-/* Mobile */
+/* Versió Mobile */
 @media (max-width: 991.98px) {
 .menu-button-container {
 display: block;
@@ -231,7 +228,7 @@ text-align: right;
 }
 }
 
-/* Desktop */
+/* Versió Desktop */
 @media (min-width: 992px) {
 .menu-button-container {
 display: none;
@@ -253,48 +250,47 @@ margin-bottom: 0;
 }
 }
 
-/* Fullscreen Background */
+/* Aquí gestionem les imatges que formen part del fons dels articles*/
 .background {
-    position: relative;
-    background-image: url('images/background.jpg');
-    background-size: cover;
-    background-position: center;
-    padding-top: 500px;
-  }
-  
-  .background::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-size: cover;
-    background-position: center;
-  }
-  .title {
-    color: #F2F2F2;
-    font-size: 40px;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-  }
-  .full-width-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .full-width-container img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-  }
-  
+position: relative;
+background-image: url('images/background.jpg');
+background-size: cover;
+background-position: center;
+padding-top: 500px;
+}
+
+.background::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+background-size: cover;
+background-position: center;
+}
+.title {
+color: #F2F2F2;
+font-size: 40px;
+text-align: center;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+margin: 0;
+}
+.full-width-container {
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.full-width-container img {
+max-width: 100%;
+max-height: 100%;
+object-fit: contain;
+}
