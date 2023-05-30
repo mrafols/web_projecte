@@ -256,7 +256,7 @@ margin-bottom: 0;
     background-image: url('images/background.jpg');
     background-size: cover;
     background-position: center;
-    padding: 200px; /* Adjust the padding value to make the background image bigger */
+    padding-top: 500px;
   }
   
   .background::before {
