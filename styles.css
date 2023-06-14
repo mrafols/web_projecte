@@ -220,7 +220,7 @@ text-decoration: none;
 
 
 /* Versió Mobile */
-@media (max-width: 991.98px) {
+@media (max-width: 1199px) {
 .menu-button-container {
 display: block;
 }
@@ -231,7 +231,7 @@ text-align: right;
 }
 
 /* Versió Desktop */
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
 .menu-button-container {
 display: none;
 }
