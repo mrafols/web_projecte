@@ -21,86 +21,85 @@
           </label>
           <nav id="navigation" class="nav">
             <ul class="justify-content-center">
-              <li class="nav-item"><a class="nav-link" href="index.html">Inici</a></li>
-              <li class="nav-item"><a class="nav-link" href="quisom.html">Qui som</a></li>
-              <li class="nav-item"><a class="nav-link" href="productes.html">Productes</a></li>
-              <li class="nav-item"><a class="nav-link" href="comfuncionem.html">Com funcionem</a></li>
-              <li class="nav-item"><a class="nav-link" href="compraenlinia.html">Compra en línia</a></li>
-              <li class="nav-item"><a class="nav-link" href="contacte.html">Contacte</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html" title="Inici">Inici</a></li>
+              <li class="nav-item"><a class="nav-link" href="quisom.html" title="Qui som">Qui som</a></li>
+              <li class="nav-item"><a class="nav-link" href="productes.html" title="Productes">Productes</a></li>
+              <li class="nav-item"><a class="nav-link" href="comfuncionem.html" title="Com funcionem">Com funcionem</a></li>
+              <li class="nav-item"><a class="nav-link" href="compraenlinia.html" title="Compra en línia">Compra en línia</a></li>
+              <li class="nav-item"><a class="nav-link" href="contacte.html" title="Contacte">Contacte</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </div>
   </header>
-  <div class="background">
-    <div class="title">
-      <h1>CONTACTA AMB NOSALTRES</h1>
-    </div>
-  </div>
-<div class="content">
-    <div class="container">
-      <section class="mb-4">
-        <p class="text-center w-responsive mx-auto mb-5">Tens algún dubte o vols coneixer més sobre la coperativa?</p>
-        <div class="row">
+  <main>
+    <article class="background">
+      <section class="title">
+        <h1>CONTACTA AMB NOSALTRES</h1>
+      </section>
+    </article>
+    <article class="content">
+      <div class="container">
+        <section class="mb-4">
+          <p class="text-center w-responsive mx-auto mb-5">Tens algún dubte o vols coneixer més sobre la coperativa?</p>
+          <div class="row">
             <div class="col-md-9 mb-md-0 mb-5">
-                <form id="contact-form" nom="contact-form" action="mail.php" method="POST">
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="text" id="nom" nom="nom" class="form-control">
-                                <label for="nom" class="">Nom</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="text" id="email" nom="email" class="form-control">
-                                <label for="email" class="">Email</label>
-                            </div>
-                        </div>
+              <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      <input type="text" id="nom" name="nom" class="form-control">
+                      <label for="nom" class="">Nom</label>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="md-form mb-0">
-                                <input type="text" id="asumpte" nom="asumpte" class="form-control">
-                                <label for="asumpte" class="">Asumpte</label>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      <input type="text" id="email" name="email" class="form-control">
+                      <label for="email" class="">Email</label>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="md-form">
-                                <textarea type="text" id="misatge" nom="misatge" rows="2" class="form-control md-textarea"></textarea>
-                                <label for="misatge">El teu misatge</label>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <div class="text-center text-md-left">
-                    <a class="btn btn-primary" onclick="mostrarPopup()">Enviar</a>
+                  </div>
                 </div>
-                <div class="status"></div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form mb-0">
+                      <input type="text" id="asumpte" name="asumpte" class="form-control">
+                      <label for="asumpte" class="">Asumpte</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form">
+                      <textarea type="text" id="misatge" name="misatge" rows="2" class="form-control md-textarea"></textarea>
+                      <label for="misatge">El teu misatge</label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="mostrarPopup()">Enviar</a>
+              </div>
+              <div class="status"></div>
             </div>
             <div class="col-md-3 text-center">
-                <ul class="list-unstyled mb-0">
-                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                        <p>Carrer Sinia de Sa Morera 25, 07702 Menorca</p>
-                    </li>
-
-                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                        <p>971253575</p>
-                    </li>
-
-                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                        <p>contacte@coperapp.com</p>
-                    </li>
-                </ul>
+              <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                  <p>Carrer Sinia de Sa Morera 25, 07702 Menorca</p>
+                </li>
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p>971253575</p>
+                </li>
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                  <p>contacte@coperapp.com</p>
+                </li>
+              </ul>
             </div>
-        </div>
-      </section>
-    </div>
-  </div>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
   <footer class="footer">
     <div class="container">
       <div class="row align-items-center">
@@ -108,19 +107,21 @@
           <img class="footer-logo" src="Logo.svg" alt="Logotip del peu de pàgina">
         </div>
         <div class="col-12 col-md-8 text-center">
-          <ul class="footer-menu">
-            <li class="nav-item"><a class="nav-link" href="quisom.html">Qui som</a></li>
-            <li class="nav-item"><a class="nav-link" href="productes.html">Productes</a></li>
-            <li class="nav-item"><a class="nav-link" href="comfuncionem.html">Com funcionem</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacte.html">Contacte</a></li>
-            <li class="nav-item"><a class="nav-link" href="compraenlinia.html">Compra en línia</a></li>
-          </ul>
+          <nav>
+            <ul class="footer-menu">
+              <li class="nav-item"><a class="nav-link" href="quisom.html" title="Qui som">Qui som</a></li>
+              <li class="nav-item"><a class="nav-link" href="productes.html" title="Productes">Productes</a></li>
+              <li class="nav-item"><a class="nav-link" href="comfuncionem.html" title="Com funcionem">Com funcionem</a></li>
+              <li class="nav-item"><a class="nav-link" href="contacte.html" title="Contacte">Contacte</a></li>
+              <li class="nav-item"><a class="nav-link" href="compraenlinia.html" title="Compra en línia">Compra en línia</a></li>
+            </ul>
+          </nav>
         </div>
         <div class="col-12 col-md-2 text-center">
           <ul class="social-networks">
-            <li><a href="#"><img src="icons/facebook.png" alt="Facebook"></a></li>
-            <li><a href="#"><img src="icons/twitter.png" alt="Twitter"></a></li>
-            <li><a href="#"><img src="icons/instagram.png" alt="Instagram"></a></li>
+            <li><a href="#" title="Segueix-nos a Facebook"><img src="icons/facebook.png" alt="Facebook"></a></li>
+            <li><a href="#" title="Segueix-nos a Twitter"><img src="icons/twitter.png" alt="Twitter"></a></li>
+            <li><a href="#" title="Segueix-nos a Instagram"><img src="icons/instagram.png" alt="Instagram"></a></li>
           </ul>
         </div>
       </div>
