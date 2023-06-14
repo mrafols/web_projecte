@@ -69,6 +69,7 @@ height: auto;
 h3, h4, h5, h6 {
 text-align: center;
 font-family: 'Montserrat', sans-serif;
+color: #AA5656;
 }
 /* Contingut principal */
 .content {
@@ -93,6 +94,7 @@ margin-top: 30px;
 .news-item h2 {
 text-align: center;
 font-weight: bold;
+color: #AA5656;
 }
 /* Imatge de l'item de notícia */
 .news-image img {
